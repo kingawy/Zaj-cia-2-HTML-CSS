@@ -1,58 +1,108 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8" />
-    <title>Strona</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsywna Strona</title>
     <style>
-        .small-image {
-        width: 30%;  /* Szerokość */
-        height: auto; /* Wysokość */
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+        .header img {
+            width: 50px;
+            height: auto;
+        }
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+            flex: 1;
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            padding: 15px;
+            width: 250px;
+        }
+        .box h3 {
+            align-self: flex-end;
+            background-color: lightgray;
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+            padding: 5px;
+        }
+        .box p {
+            text-align: justify;
+            padding: 15px;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            background-color: lightgray;
+            border-top: 2px solid black;
+            margin-top: 15px;
+        }
+        .footer p:nth-child(2) {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <h1>To jest pierwsza linijka</h1>
-
-       <blockquote>
-        <p>It was a bright cold day in April, and the clocks were striking
-       thirteen.</p>
-        <footer>
-        First sentence in <cite><a
-       href="http://www.george-orwell.org/1984/0.html"><em>Nineteen
-       Eighty-Four</em></a></cite> by George Orwell (Part 1, Chapter 1).
-        </footer>
-       </blockquote>
-       <p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your
-       <abbr title="HyperText Markup Language">HTML</abbr>.</p> 
-
-       <p>Oto fragment kodu: <code>print("Hello, World!")</code></p>
-       <p>To jest <mark>ważne</mark> słowo.</p>
-       <p>© 2025 <small>Wszelkie prawa zastrzeżone.</small></p>
-       <p>To jest <span style="color: red;">czerwony</span> tekst.</p>
-       <p>To jest <strong>bardzo ważne</strong> zdanie.</p>
-       <p>Spotkanie odbędzie się <time datetime="2025-04-10T18:00">10 kwietnia o 18:00</time>.</p>
-
-        <select>
-            <option value="volvo">Volvo</option>
-            <option value="bmw">BMW</option>
-        </select>
-
-        <progress value="70" max="100"></progress>
-
-        <select>
-            <option>Jabłko</option>
-            <option>Banana</option>
-            <option>Pomarańcza</option>
-        </select>
-        
-        <textarea rows="4" cols="30">Tutaj wpisz swoją wiadomość...</textarea>
-
-        
-
-
-        
-
-
-
+    <div class="header">
+        <img src="pobrane.jpg" alt="Logo">
+        <div class="title">Pierwsza responsywna strona internetowa</div>
+        <div class="nav">
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="box">
+            <h3>Akapit 1</h3>
+            <p>To jest jakiś przykładowy tekst umieszczony w akapicie pierwszym. Warto dodać tutaj coś swojego!</p>
+        </div>
+        <div class="box">
+            <h3>Akapit 2</h3>
+            <p>To jest jakiś przykładowy tekst umieszczony w akapicie drugim. Warto dodać tutaj coś swojego!</p>
+        </div>
+        <div class="box">
+            <h3>Akapit 3</h3>
+            <p>To jest jakiś przykładowy tekst umieszczony w akapicie trzecim. Warto dodać tutaj coś swojego!</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Projekt i wykonanie</p>
+        <p>Krzysztof Grochot</p>
+    </div>
 </body>
 </html>

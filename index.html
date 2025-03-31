@@ -1,158 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-    <title>Strona internetowa z efektami wizualnymi</title>
+    <meta charset="UTF-8" />
+    <title>Strona</title>
     <style>
-        body {
-            background-color: rgb(255, 255, 255);
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            padding: 20px;
-            text-align: center;
-        }
-
-        /* Efekty na tekstach */
-        h1 {
-            color: rgb(124, 66, 95);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        p {
-            color: rgb(124, 66, 95);
-            text-align: center;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Efekty dla pól (div) */
-        .box {
-            background-color: rgba(124, 66, 95, 0.1);
-            border: 2px solid rgb(124, 66, 95);
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .centered-image {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-        }
-
-        /* Tabela z efektami */
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin-top: 30px;
-            margin-bottom: 20px; /* Dodanie przestrzeni poniżej tabeli */
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        table, th, td {
-            border: 1px solid rgb(124, 66, 95);
-        }
-
-        th, td {
-            padding: 15px;
-            text-align: center;
-        }
-
-        th {
-            background-color: rgb(124, 66, 95);
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: rgba(124, 66, 95, 0.1);
-        }
-
-        /* Efekt na przycisku */
-        button {
-            background-color: rgb(124, 66, 95);
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: rgb(102, 52, 75);
-        }
-
-        /* Animacja pojawiania się */
-        .fade-in {
-            animation: fadeIn 2s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
+        .small-image {
+        width: 30%;  /* Szerokość */
+        height: auto; /* Wysokość */
+    }
     </style>
 </head>
 <body>
+    <h1>To jest pierwsza linijka</h1>
 
-    <h1 class="fade-in">To jest pierwsza linijka.</h1>
+       <blockquote>
+        <p>It was a bright cold day in April, and the clocks were striking
+       thirteen.</p>
+        <footer>
+        First sentence in <cite><a
+       href="http://www.george-orwell.org/1984/0.html"><em>Nineteen
+       Eighty-Four</em></a></cite> by George Orwell (Part 1, Chapter 1).
+        </footer>
+       </blockquote>
+       <p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your
+       <abbr title="HyperText Markup Language">HTML</abbr>.</p> 
 
-    <div class="box">
-        <p class="fade-in">Druga mniejsza linijka w polu.</p>
-    </div>
-
-    <p class="fade-in">To jest trzecia linijka.</p>
-
-    <p class="fade-in">To jest pierwsza linijka.<br>To jest druga linijka po <strong>przełamaniu linii</strong>.</p>
-    <p class="fade-in"><strong>Akapit</strong> to tekst, który jest oddzielony od innych za pomocą pustych linii.</p>
-
-    <!-- Tekst pogrubiony -->
-    <p class="fade-in">To jest <strong>tekst pogrubiony</strong>.</p>
-
-    <!-- Tekst pochylony -->
-    <p class="fade-in">To jest <em>tekst pochylony</em>.</p>
-
-    <!-- Tekst podkreślony -->
-    <p class="fade-in">To jest <u>tekst podkreślony</u>.</p>
-
-    <!-- Rodzaj czcionki -->
-    <p class="fade-in" style="font-family: 'Courier New', Courier, monospace;">To jest tekst w czcionce typu Courier New.</p>
-
-    <p class="fade-in">Tekst z indeksem górnym: H<sup>2</sup>O oraz tekst z indeksem dolnym: CO<sub>2</sub>.</p>
+       <p>Oto fragment kodu: <code>print("Hello, World!")</code></p>
+       <p>To jest <mark>ważne</mark> słowo.</p>
+       <p>© 2025 <small>Wszelkie prawa zastrzeżone.</small></p>
+       <p>To jest <span style="color: red;">czerwony</span> tekst.</p>
+       <p>To jest <strong>bardzo ważne</strong> zdanie.</p>
+       <p>Spotkanie odbędzie się <time datetime="2025-04-10T18:00">10 kwietnia o 18:00</time>.</p>
 
     
+        <select>
+            <optgroup label="Frontend">
+                <option>HTML</option>
+                <option>CSS</option>
+            </optgroup>
+            <optgroup label="Backend">
+                <option>PHP</option>
+                <option>Node.js</option>
+            </optgroup>
+        </select>
+        
+        <select>
+            <option value="volvo">Volvo</option>
+            <option value="bmw">BMW</option>
+        </select>
 
-    <!-- Tabela -->
-    <table class="fade-in">
-        <tr>
-            <th>Imię</th>
-            <th>Wiek</th>
-            <th>Miasto</th>
-        </tr>
-        <tr>
-            <td>Jan</td>
-            <td>25</td>
-            <td>Warszawa</td>
-        </tr>
-        <tr>
-            <td>Alicja</td>
-            <td>30</td>
-            <td>Kraków</td>
-        </tr>
-        <tr>
-            <td>Marek</td>
-            <td>22</td>
-            <td>Gdańsk</td>
-        </tr>
-    </table>
+        <progress value="70" max="100"></progress>
 
-    <!-- Przycisk -->
-    <button class="fade-in" onclick="alert('Przycisk został kliknięty!')">Kliknij mnie</button>
+        <select>
+            <option>Jabłko</option>
+            <option>Banana</option>
+            <option>Pomarańcza</option>
+        </select>
+        
+        <textarea rows="4" cols="30">Tutaj wpisz swoją wiadomość...</textarea>
+
+        
+
+
+        
+
+
 
 </body>
 </html>

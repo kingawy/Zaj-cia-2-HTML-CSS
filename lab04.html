@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezerwacja Stolika - Restauracja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background-color: #f8c291;
+            padding: 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2d3436;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 3rem;
+        }
+
+        .card {
+            border-radius: 10px;
+        }
+
+        .form-control {
+            border-radius: 10px;
+        }
+
+        .btn {
+            border-radius: 20px;
+        }
+
+        .section-header {
+            margin-top: 2rem;
+            text-align: center;
+            color: #f8c291;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nagłówek -->
+    <header>
+        <h1>Restauracja Smakosza</h1>
+        <p>Zarezerwuj stolik i ciesz się wyjątkowym obiadem!</p>
+    </header>
+
+    <!-- Formularz rezerwacji -->
+    <div class="container">
+        <h2 class="section-header">Rezerwacja Stolika</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card p-4">
+                    <h3 class="card-title text-center">Formularz Rezerwacji</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Imię i nazwisko</label>
+                            <input type="text" class="form-control" id="name" placeholder="Twoje imię" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Adres e-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Twój e-mail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Numer telefonu</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Twój numer telefonu" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Data rezerwacji</label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="time" class="form-label">Godzina</label>
+                            <input type="time" class="form-control" id="time" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="people" class="form-label">Liczba osób</label>
+                            <select class="form-select" id="people" required>
+                                <option value="1">1 osoba</option>
+                                <option value="2">2 osoby</option>
+                                <option value="3">3 osoby</option>
+                                <option value="4">4 osoby</option>
+                                <option value="5">5 osób</option>
+                                <option value="6">6 osób</option>
+                                <option value="7">7 osób</option>
+                                <option value="8">8 osób</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Zarezerwuj Stol</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sekcja kontaktowa -->
+    <div class="container mt-5">
+        <h2 class="section-header">Skontaktuj się z nami</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Adres</h5>
+                <p>ul. Restauracyjna 12, 00-000 Miasto</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Telefon</h5>
+                <p>(+48) 123 456 789</p>
+            </div>
+            <div class="col-md-4">
+                <h5>E-mail</h5>
+                <p>kontakt@restauracjasmakosza.pl</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2025 Restauracja Smakosza. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>
